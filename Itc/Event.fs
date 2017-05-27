@@ -84,5 +84,3 @@ let rec join l r =
 let rec print = function
     | EventLeaf(n) -> sprintf "%i" n
     | EventNode(n, l, r) -> sprintf "(%i,%s,%s)" n (print l) (print r)
-
-    

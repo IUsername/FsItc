@@ -59,7 +59,6 @@ type ``Scenario Tests`` ()=
         let a6 = event a5
         Assert.AreEqual(Stamp.Create(Node(One,Zero), Event.Create(2)), a6)
 
-
     //         ^            ^ time ↑
     //         |            |
     // evt p3  *            |
@@ -120,8 +119,6 @@ type ``Scenario Tests`` ()=
         Assert.IsTrue(containsInOrder [q1;q2] ordered)
         Assert.IsTrue(containsInOrder [p1;q2] ordered)       
         Assert.IsTrue(containsInOrder [q1;p2;p3] ordered)
-
-
 
     // Source http://zoo.cs.yale.edu/classes/cs426/2013/bib/parker83detection.pdf
     // Fig. 1. Partition graph G(f) for file stored redundantly at sites A, B, C, D.

@@ -1,5 +1,4 @@
 ﻿module Itc.Tests.Processing
-
 open Itc.Stamp
 
 type Message =

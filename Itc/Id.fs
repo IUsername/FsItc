@@ -36,13 +36,3 @@ let rec split t =
         | Node(il, ir) -> Node(Node(il, Zero), Node(ir, Zero))
         | _ -> failwith "Expected a Node"            
     | Node(l, r) -> Node(Node(l, Zero), Node(Zero, r))
-
-
-            
-        
-        
-   
-
-
-
-

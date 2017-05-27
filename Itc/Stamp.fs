@@ -1,5 +1,4 @@
 ﻿module Itc.Stamp
-
 open Itc.Id
 open Itc.Event
 
