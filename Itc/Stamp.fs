@@ -20,7 +20,7 @@ type Stamp =
             | :? Stamp as y -> (x :> System.IComparable<_>).CompareTo y
             | _ -> invalidArg "yobj" "cannot compare values of different types"   
 
-let rec fill s =   
+let rec internal fill s =   
     match s.i with
     | Zero -> s.e
     | One -> EventLeaf(maxN s.e)
@@ -46,7 +46,7 @@ let rec fill s =
                 (EventNode n e'l e'r) |> normalize
             | _ -> s.e
 
-let rec grow s =
+let rec internal grow s =
     match s.e with
     | EventLeaf(n) ->
         match s.i with
